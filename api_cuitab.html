@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search recipes</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="recipe.css" />
+  </head>
+  <body>
+    <header class="logo">
+      <img src="Images/Logo.png" alt="Logo" />
+    </header>
+
+    <div class="hero">
+      <nav>
+        <div class="icon">
+          <a href="https://www.Instagram.com/">
+            <img src="Images/instagram.png" alt="Instagram"
+          /></a>
+
+          <a href="https://www.linkedin.com/">
+            <img src="Images/linkedin.png" alt="Linkedin"
+          /></a>
+          <a href="https://www.Youtube.com/">
+            <img src="Images/Youtube.png" alt="Youtube"
+          /></a>
+        </div>
+        <ul>
+          <li><a class="link" href="contact.html">Contact</a></li>
+          <li><a class="link" href="Recipes.html">Recipes</a></li>
+          <li><a class="link" href="homepage.html">Home</a></li>
+        </ul>
+        <a href="loginpage.html"> 
+          <button type="button">Register now</button>
+        </a>
+      </nav>
+    </div>
+
+    <div class="api_cuitab">
+      <form id="search-form">
+        <h2 for="query">Search for recipes:</h2>
+        <input type="text" id="query" name="query" required />
+        <button class="sbutton" type="submit">Search</button>
+      </form>
+
+      <div class="container">
+        <div id="results" class="grid"></div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="email">
+        <a href="mailto: Info@CuisineTable.com"> Info@CuisineTable.com </a>
+      </div>
+      <div class="copywrite">
+        <div class="foot">&copy;Cuisine<span>Table</span></div>
+      </div>
+    </footer>
+
+    <script src="api_cuitab.js"></script>
+  </body>
+</html>

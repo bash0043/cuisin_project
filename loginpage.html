@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CuisineTable</title>
+    <link rel="stylesheet" href="log.css" />
+  </head>
+
+  <body>
+    <header class="logo">
+      <img src="Images/Logo.png" alt="Logo" />
+    </header>
+    <div class="hero">
+      <nav>
+        <div class="icon">
+          <a href="https://www.Instagram.com/">
+            <img src="Images/instagram.png" alt="Instagram"
+          /></a>
+
+          <a href="https://www.linkedin.com/">
+            <img src="Images/linkedin.png" alt="Linkedin"
+          /></a>
+          <a href="https://www.Youtube.com/">
+            <img src="Images/Youtube.png" alt="Youtube"
+          /></a>
+        </div>
+        <ul>
+          <li><a class="link" href="api_cuitab.html">Search</a></li>
+          <li><a class="link" href="contact.html">Contact</a></li>
+          <li><a class="link" href="Recipes.html">Recipes</a></li>
+          <li><a class="link" href="homepage.html">Home</a></li>
+        </ul>
+    
+        <div>
+            <button id="logout" onclick="Logout();Logoutmodal()">Logout</button>
+    
+              <div id="myModal" class="modal">
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>You have logged out</p>
+            </div>
+            </div>
+        </div>  
+        </nav>
+
+
+<div class="login">
+    <form name='flogin'>
+
+        <h1>REGISTER</h1>
+        <label for="name">Email:</label>
+        <input type="email" id="name" placeholder="Username" required>
+
+        <label for="pw">Password:</label>
+        <input type="password" id= "pw" placeholder="Password" required>
+
+        <ul class="requires">
+            <li class="length">Must be at least 10 characters long.</li>
+            <li class="lowercase">Must contain a lowercase letter.</li>
+            <li class="uppercase">Must contain an uppercase letter.</li>
+            <li class="uppercase">Must contain an number letter.</li>
+        </ul>
+        <input id="rbtn" type="submit" value="Register" onclick="store()">
+
+    </form>
+</div>
+
+<div class="login">
+    <form name='flogin'>
+
+        <h1>SIGN IN</h1>
+
+        <label for="userName">Email:</label>
+        <input type="email" id="userName" placeholder="Username" required>
+
+        <label for="userPw">Password:</label>
+        <input type="password" id= "userPw" placeholder="Password" required>
+
+        <div id="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                   style="display: inline-block;">
+            <label>Remember me</label>
+        </div>
+
+        <input id= "login_btn" type="submit" value="Login" onclick="check()">
+
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
